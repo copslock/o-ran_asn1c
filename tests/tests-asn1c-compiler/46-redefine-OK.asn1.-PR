@@ -1,0 +1,160 @@
+
+/*** <<< INCLUDES [PrimitiveType] >>> ***/
+
+#include <OCTET_STRING.h>
+
+/*** <<< TYPE-DECLS [PrimitiveType] >>> ***/
+
+typedef OCTET_STRING_t	 PrimitiveType_t;
+
+/*** <<< FUNC-DECLS [PrimitiveType] >>> ***/
+
+extern asn_TYPE_descriptor_t asn_DEF_PrimitiveType;
+asn_struct_free_f PrimitiveType_free;
+asn_struct_print_f PrimitiveType_print;
+asn_constr_check_f PrimitiveType_constraint;
+ber_type_decoder_f PrimitiveType_decode_ber;
+der_type_encoder_f PrimitiveType_encode_der;
+xer_type_decoder_f PrimitiveType_decode_xer;
+xer_type_encoder_f PrimitiveType_encode_xer;
+
+/*** <<< CODE [PrimitiveType] >>> ***/
+
+/*
+ * This type is implemented using OCTET_STRING,
+ * so here we adjust the DEF accordingly.
+ */
+
+/*** <<< STAT-DEFS [PrimitiveType] >>> ***/
+
+static const ber_tlv_tag_t asn_DEF_PrimitiveType_tags_1[] = {
+	(ASN_TAG_CLASS_UNIVERSAL | (4 << 2))
+};
+asn_TYPE_descriptor_t asn_DEF_PrimitiveType = {
+	"PrimitiveType",
+	"PrimitiveType",
+	&asn_OP_OCTET_STRING,
+	asn_DEF_PrimitiveType_tags_1,
+	sizeof(asn_DEF_PrimitiveType_tags_1)
+		/sizeof(asn_DEF_PrimitiveType_tags_1[0]), /* 1 */
+	asn_DEF_PrimitiveType_tags_1,	/* Same as above */
+	sizeof(asn_DEF_PrimitiveType_tags_1)
+		/sizeof(asn_DEF_PrimitiveType_tags_1[0]), /* 1 */
+	{ 0, 0, OCTET_STRING_constraint },
+	0, 0,	/* No members */
+	&asn_SPC_OCTET_STRING_specs	/* Additional specs */
+};
+
+
+/*** <<< INCLUDES [ConstructedType] >>> ***/
+
+#include "PrimitiveType.h"
+#include <constr_SEQUENCE.h>
+
+/*** <<< TYPE-DECLS [ConstructedType] >>> ***/
+
+typedef struct ConstructedType {
+	PrimitiveType_t	 field;
+	
+	/* Context for parsing across buffer boundaries */
+	asn_struct_ctx_t _asn_ctx;
+} ConstructedType_t;
+
+/*** <<< FUNC-DECLS [ConstructedType] >>> ***/
+
+extern asn_TYPE_descriptor_t asn_DEF_ConstructedType;
+extern asn_SEQUENCE_specifics_t asn_SPC_ConstructedType_specs_1;
+extern asn_TYPE_member_t asn_MBR_ConstructedType_1[1];
+
+/*** <<< STAT-DEFS [ConstructedType] >>> ***/
+
+asn_TYPE_member_t asn_MBR_ConstructedType_1[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct ConstructedType, field),
+		.tag = (ASN_TAG_CLASS_CONTEXT | (5 << 2)),
+		.tag_mode = -1,	/* IMPLICIT tag at current level */
+		.type = &asn_DEF_PrimitiveType,
+		.type_selector = 0,
+		{ .oer_constraints = 0, .per_constraints = 0, .general_constraints = 0 },
+		0, 0, /* No default value */
+		.name = "field"
+		},
+};
+static const ber_tlv_tag_t asn_DEF_ConstructedType_tags_1[] = {
+	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
+};
+static const asn_TYPE_tag2member_t asn_MAP_ConstructedType_tag2el_1[] = {
+    { (ASN_TAG_CLASS_CONTEXT | (5 << 2)), 0, 0, 0 } /* field */
+};
+asn_SEQUENCE_specifics_t asn_SPC_ConstructedType_specs_1 = {
+	sizeof(struct ConstructedType),
+	offsetof(struct ConstructedType, _asn_ctx),
+	.tag2el = asn_MAP_ConstructedType_tag2el_1,
+	.tag2el_count = 1,	/* Count of tags in the map */
+	0, 0, 0,	/* Optional elements (not needed) */
+	-1,	/* First extension addition */
+};
+asn_TYPE_descriptor_t asn_DEF_ConstructedType = {
+	"ConstructedType",
+	"ConstructedType",
+	&asn_OP_SEQUENCE,
+	asn_DEF_ConstructedType_tags_1,
+	sizeof(asn_DEF_ConstructedType_tags_1)
+		/sizeof(asn_DEF_ConstructedType_tags_1[0]), /* 1 */
+	asn_DEF_ConstructedType_tags_1,	/* Same as above */
+	sizeof(asn_DEF_ConstructedType_tags_1)
+		/sizeof(asn_DEF_ConstructedType_tags_1[0]), /* 1 */
+	{ 0, 0, SEQUENCE_constraint },
+	asn_MBR_ConstructedType_1,
+	1,	/* Elements count */
+	&asn_SPC_ConstructedType_specs_1	/* Additional specs */
+};
+
+
+/*** <<< INCLUDES [T] >>> ***/
+
+#include "ConstructedType.h"
+
+/*** <<< TYPE-DECLS [T] >>> ***/
+
+typedef ConstructedType_t	 T_t;
+
+/*** <<< FUNC-DECLS [T] >>> ***/
+
+extern asn_TYPE_descriptor_t asn_DEF_T;
+asn_struct_free_f T_free;
+asn_struct_print_f T_print;
+asn_constr_check_f T_constraint;
+ber_type_decoder_f T_decode_ber;
+der_type_encoder_f T_encode_der;
+xer_type_decoder_f T_decode_xer;
+xer_type_encoder_f T_encode_xer;
+
+/*** <<< CODE [T] >>> ***/
+
+/*
+ * This type is implemented using ConstructedType,
+ * so here we adjust the DEF accordingly.
+ */
+
+/*** <<< STAT-DEFS [T] >>> ***/
+
+static const ber_tlv_tag_t asn_DEF_T_tags_1[] = {
+	(ASN_TAG_CLASS_CONTEXT | (3 << 2)),
+	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
+};
+asn_TYPE_descriptor_t asn_DEF_T = {
+	"T",
+	"T",
+	&asn_OP_SEQUENCE,
+	asn_DEF_T_tags_1,
+	sizeof(asn_DEF_T_tags_1)
+		/sizeof(asn_DEF_T_tags_1[0]) - 1, /* 1 */
+	asn_DEF_T_tags_1,	/* Same as above */
+	sizeof(asn_DEF_T_tags_1)
+		/sizeof(asn_DEF_T_tags_1[0]), /* 2 */
+	{ 0, 0, SEQUENCE_constraint },
+	asn_MBR_ConstructedType_1,
+	1,	/* Elements count */
+	&asn_SPC_ConstructedType_specs_1	/* Additional specs */
+};
+

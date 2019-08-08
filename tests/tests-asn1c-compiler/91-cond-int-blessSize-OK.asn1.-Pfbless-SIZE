@@ -1,0 +1,330 @@
+
+/*** <<< INCLUDES [OK-Integer1] >>> ***/
+
+#include <NativeInteger.h>
+
+/*** <<< TYPE-DECLS [OK-Integer1] >>> ***/
+
+typedef long	 OK_Integer1_t;
+
+/*** <<< FUNC-DECLS [OK-Integer1] >>> ***/
+
+extern asn_TYPE_descriptor_t asn_DEF_OK_Integer1;
+asn_struct_free_f OK_Integer1_free;
+asn_struct_print_f OK_Integer1_print;
+asn_constr_check_f OK_Integer1_constraint;
+ber_type_decoder_f OK_Integer1_decode_ber;
+der_type_encoder_f OK_Integer1_encode_der;
+xer_type_decoder_f OK_Integer1_decode_xer;
+xer_type_encoder_f OK_Integer1_encode_xer;
+
+/*** <<< CODE [OK-Integer1] >>> ***/
+
+int
+OK_Integer1_constraint(const asn_TYPE_descriptor_t *td, const void *sptr,
+			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
+	
+	if(!sptr) {
+		ASN__CTFAIL(app_key, td, sptr,
+			"%s: value not given (%s:%d)",
+			td->name, __FILE__, __LINE__);
+		return -1;
+	}
+	
+	
+	if(1 /* No applicable constraints whatsoever */) {
+		/* Nothing is here. See below */
+	}
+	
+	return td->encoding_constraints.general_constraints(td, sptr, ctfailcb, app_key);
+}
+
+/*
+ * This type is implemented using NativeInteger,
+ * so here we adjust the DEF accordingly.
+ */
+
+/*** <<< STAT-DEFS [OK-Integer1] >>> ***/
+
+static const ber_tlv_tag_t asn_DEF_OK_Integer1_tags_1[] = {
+	(ASN_TAG_CLASS_UNIVERSAL | (2 << 2))
+};
+asn_TYPE_descriptor_t asn_DEF_OK_Integer1 = {
+	"OK-Integer1",
+	"OK-Integer1",
+	&asn_OP_NativeInteger,
+	asn_DEF_OK_Integer1_tags_1,
+	sizeof(asn_DEF_OK_Integer1_tags_1)
+		/sizeof(asn_DEF_OK_Integer1_tags_1[0]), /* 1 */
+	asn_DEF_OK_Integer1_tags_1,	/* Same as above */
+	sizeof(asn_DEF_OK_Integer1_tags_1)
+		/sizeof(asn_DEF_OK_Integer1_tags_1[0]), /* 1 */
+	{ 0, 0, OK_Integer1_constraint },
+	0, 0,	/* No members */
+	0	/* No specifics */
+};
+
+
+/*** <<< INCLUDES [OK-Integer2] >>> ***/
+
+#include <NativeInteger.h>
+
+/*** <<< TYPE-DECLS [OK-Integer2] >>> ***/
+
+typedef long	 OK_Integer2_t;
+
+/*** <<< FUNC-DECLS [OK-Integer2] >>> ***/
+
+extern asn_TYPE_descriptor_t asn_DEF_OK_Integer2;
+asn_struct_free_f OK_Integer2_free;
+asn_struct_print_f OK_Integer2_print;
+asn_constr_check_f OK_Integer2_constraint;
+ber_type_decoder_f OK_Integer2_decode_ber;
+der_type_encoder_f OK_Integer2_encode_der;
+xer_type_decoder_f OK_Integer2_decode_xer;
+xer_type_encoder_f OK_Integer2_encode_xer;
+
+/*** <<< CODE [OK-Integer2] >>> ***/
+
+int
+OK_Integer2_constraint(const asn_TYPE_descriptor_t *td, const void *sptr,
+			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
+	
+	if(!sptr) {
+		ASN__CTFAIL(app_key, td, sptr,
+			"%s: value not given (%s:%d)",
+			td->name, __FILE__, __LINE__);
+		return -1;
+	}
+	
+	
+	if(1 /* No applicable constraints whatsoever */) {
+		/* Nothing is here. See below */
+	}
+	
+	return td->encoding_constraints.general_constraints(td, sptr, ctfailcb, app_key);
+}
+
+/*
+ * This type is implemented using NativeInteger,
+ * so here we adjust the DEF accordingly.
+ */
+
+/*** <<< STAT-DEFS [OK-Integer2] >>> ***/
+
+static const ber_tlv_tag_t asn_DEF_OK_Integer2_tags_1[] = {
+	(ASN_TAG_CLASS_UNIVERSAL | (2 << 2))
+};
+asn_TYPE_descriptor_t asn_DEF_OK_Integer2 = {
+	"OK-Integer2",
+	"OK-Integer2",
+	&asn_OP_NativeInteger,
+	asn_DEF_OK_Integer2_tags_1,
+	sizeof(asn_DEF_OK_Integer2_tags_1)
+		/sizeof(asn_DEF_OK_Integer2_tags_1[0]), /* 1 */
+	asn_DEF_OK_Integer2_tags_1,	/* Same as above */
+	sizeof(asn_DEF_OK_Integer2_tags_1)
+		/sizeof(asn_DEF_OK_Integer2_tags_1[0]), /* 1 */
+	{ 0, 0, OK_Integer2_constraint },
+	0, 0,	/* No members */
+	0	/* No specifics */
+};
+
+
+/*** <<< INCLUDES [OK-Integer3] >>> ***/
+
+#include <NativeInteger.h>
+
+/*** <<< TYPE-DECLS [OK-Integer3] >>> ***/
+
+typedef long	 OK_Integer3_t;
+
+/*** <<< FUNC-DECLS [OK-Integer3] >>> ***/
+
+extern asn_TYPE_descriptor_t asn_DEF_OK_Integer3;
+asn_struct_free_f OK_Integer3_free;
+asn_struct_print_f OK_Integer3_print;
+asn_constr_check_f OK_Integer3_constraint;
+ber_type_decoder_f OK_Integer3_decode_ber;
+der_type_encoder_f OK_Integer3_encode_der;
+xer_type_decoder_f OK_Integer3_decode_xer;
+xer_type_encoder_f OK_Integer3_encode_xer;
+
+/*** <<< CODE [OK-Integer3] >>> ***/
+
+int
+OK_Integer3_constraint(const asn_TYPE_descriptor_t *td, const void *sptr,
+			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
+	
+	if(!sptr) {
+		ASN__CTFAIL(app_key, td, sptr,
+			"%s: value not given (%s:%d)",
+			td->name, __FILE__, __LINE__);
+		return -1;
+	}
+	
+	
+	if(1 /* No applicable constraints whatsoever */) {
+		/* Nothing is here. See below */
+	}
+	
+	return td->encoding_constraints.general_constraints(td, sptr, ctfailcb, app_key);
+}
+
+/*
+ * This type is implemented using NativeInteger,
+ * so here we adjust the DEF accordingly.
+ */
+
+/*** <<< STAT-DEFS [OK-Integer3] >>> ***/
+
+static const ber_tlv_tag_t asn_DEF_OK_Integer3_tags_1[] = {
+	(ASN_TAG_CLASS_UNIVERSAL | (2 << 2))
+};
+asn_TYPE_descriptor_t asn_DEF_OK_Integer3 = {
+	"OK-Integer3",
+	"OK-Integer3",
+	&asn_OP_NativeInteger,
+	asn_DEF_OK_Integer3_tags_1,
+	sizeof(asn_DEF_OK_Integer3_tags_1)
+		/sizeof(asn_DEF_OK_Integer3_tags_1[0]), /* 1 */
+	asn_DEF_OK_Integer3_tags_1,	/* Same as above */
+	sizeof(asn_DEF_OK_Integer3_tags_1)
+		/sizeof(asn_DEF_OK_Integer3_tags_1[0]), /* 1 */
+	{ 0, 0, OK_Integer3_constraint },
+	0, 0,	/* No members */
+	0	/* No specifics */
+};
+
+
+/*** <<< INCLUDES [OK-Integer4] >>> ***/
+
+#include <NativeInteger.h>
+
+/*** <<< TYPE-DECLS [OK-Integer4] >>> ***/
+
+typedef long	 OK_Integer4_t;
+
+/*** <<< FUNC-DECLS [OK-Integer4] >>> ***/
+
+extern asn_TYPE_descriptor_t asn_DEF_OK_Integer4;
+asn_struct_free_f OK_Integer4_free;
+asn_struct_print_f OK_Integer4_print;
+asn_constr_check_f OK_Integer4_constraint;
+ber_type_decoder_f OK_Integer4_decode_ber;
+der_type_encoder_f OK_Integer4_encode_der;
+xer_type_decoder_f OK_Integer4_decode_xer;
+xer_type_encoder_f OK_Integer4_encode_xer;
+
+/*** <<< CODE [OK-Integer4] >>> ***/
+
+int
+OK_Integer4_constraint(const asn_TYPE_descriptor_t *td, const void *sptr,
+			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
+	
+	if(!sptr) {
+		ASN__CTFAIL(app_key, td, sptr,
+			"%s: value not given (%s:%d)",
+			td->name, __FILE__, __LINE__);
+		return -1;
+	}
+	
+	
+	if(1 /* No applicable constraints whatsoever */) {
+		/* Nothing is here. See below */
+	}
+	
+	return td->encoding_constraints.general_constraints(td, sptr, ctfailcb, app_key);
+}
+
+/*
+ * This type is implemented using NativeInteger,
+ * so here we adjust the DEF accordingly.
+ */
+
+/*** <<< STAT-DEFS [OK-Integer4] >>> ***/
+
+static const ber_tlv_tag_t asn_DEF_OK_Integer4_tags_1[] = {
+	(ASN_TAG_CLASS_UNIVERSAL | (2 << 2))
+};
+asn_TYPE_descriptor_t asn_DEF_OK_Integer4 = {
+	"OK-Integer4",
+	"OK-Integer4",
+	&asn_OP_NativeInteger,
+	asn_DEF_OK_Integer4_tags_1,
+	sizeof(asn_DEF_OK_Integer4_tags_1)
+		/sizeof(asn_DEF_OK_Integer4_tags_1[0]), /* 1 */
+	asn_DEF_OK_Integer4_tags_1,	/* Same as above */
+	sizeof(asn_DEF_OK_Integer4_tags_1)
+		/sizeof(asn_DEF_OK_Integer4_tags_1[0]), /* 1 */
+	{ 0, 0, OK_Integer4_constraint },
+	0, 0,	/* No members */
+	0	/* No specifics */
+};
+
+
+/*** <<< INCLUDES [NO-Integer5] >>> ***/
+
+#include <NativeInteger.h>
+
+/*** <<< TYPE-DECLS [NO-Integer5] >>> ***/
+
+typedef long	 NO_Integer5_t;
+
+/*** <<< FUNC-DECLS [NO-Integer5] >>> ***/
+
+extern asn_TYPE_descriptor_t asn_DEF_NO_Integer5;
+asn_struct_free_f NO_Integer5_free;
+asn_struct_print_f NO_Integer5_print;
+asn_constr_check_f NO_Integer5_constraint;
+ber_type_decoder_f NO_Integer5_decode_ber;
+der_type_encoder_f NO_Integer5_encode_der;
+xer_type_decoder_f NO_Integer5_decode_xer;
+xer_type_encoder_f NO_Integer5_encode_xer;
+
+/*** <<< CODE [NO-Integer5] >>> ***/
+
+int
+NO_Integer5_constraint(const asn_TYPE_descriptor_t *td, const void *sptr,
+			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
+	
+	if(!sptr) {
+		ASN__CTFAIL(app_key, td, sptr,
+			"%s: value not given (%s:%d)",
+			td->name, __FILE__, __LINE__);
+		return -1;
+	}
+	
+	
+	if(1 /* No applicable constraints whatsoever */) {
+		/* Nothing is here. See below */
+	}
+	
+	return td->encoding_constraints.general_constraints(td, sptr, ctfailcb, app_key);
+}
+
+/*
+ * This type is implemented using NativeInteger,
+ * so here we adjust the DEF accordingly.
+ */
+
+/*** <<< STAT-DEFS [NO-Integer5] >>> ***/
+
+static const ber_tlv_tag_t asn_DEF_NO_Integer5_tags_1[] = {
+	(ASN_TAG_CLASS_UNIVERSAL | (2 << 2))
+};
+asn_TYPE_descriptor_t asn_DEF_NO_Integer5 = {
+	"NO-Integer5",
+	"NO-Integer5",
+	&asn_OP_NativeInteger,
+	asn_DEF_NO_Integer5_tags_1,
+	sizeof(asn_DEF_NO_Integer5_tags_1)
+		/sizeof(asn_DEF_NO_Integer5_tags_1[0]), /* 1 */
+	asn_DEF_NO_Integer5_tags_1,	/* Same as above */
+	sizeof(asn_DEF_NO_Integer5_tags_1)
+		/sizeof(asn_DEF_NO_Integer5_tags_1[0]), /* 1 */
+	{ 0, 0, NO_Integer5_constraint },
+	0, 0,	/* No members */
+	0	/* No specifics */
+};
+

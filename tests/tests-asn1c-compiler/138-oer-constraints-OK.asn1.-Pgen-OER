@@ -1,0 +1,1329 @@
+
+/*** <<< INCLUDES [A-noc] >>> ***/
+
+#include <NativeInteger.h>
+
+/*** <<< TYPE-DECLS [A-noc] >>> ***/
+
+typedef long	 A_noc_t;
+
+/*** <<< FUNC-DECLS [A-noc] >>> ***/
+
+extern asn_TYPE_descriptor_t asn_DEF_A_noc;
+asn_struct_free_f A_noc_free;
+asn_struct_print_f A_noc_print;
+asn_constr_check_f A_noc_constraint;
+ber_type_decoder_f A_noc_decode_ber;
+der_type_encoder_f A_noc_encode_der;
+xer_type_decoder_f A_noc_decode_xer;
+xer_type_encoder_f A_noc_encode_xer;
+oer_type_decoder_f A_noc_decode_oer;
+oer_type_encoder_f A_noc_encode_oer;
+
+/*** <<< CODE [A-noc] >>> ***/
+
+/*
+ * This type is implemented using NativeInteger,
+ * so here we adjust the DEF accordingly.
+ */
+
+/*** <<< STAT-DEFS [A-noc] >>> ***/
+
+static const ber_tlv_tag_t asn_DEF_A_noc_tags_1[] = {
+	(ASN_TAG_CLASS_UNIVERSAL | (2 << 2))
+};
+asn_TYPE_descriptor_t asn_DEF_A_noc = {
+	"A-noc",
+	"A-noc",
+	&asn_OP_NativeInteger,
+	asn_DEF_A_noc_tags_1,
+	sizeof(asn_DEF_A_noc_tags_1)
+		/sizeof(asn_DEF_A_noc_tags_1[0]), /* 1 */
+	asn_DEF_A_noc_tags_1,	/* Same as above */
+	sizeof(asn_DEF_A_noc_tags_1)
+		/sizeof(asn_DEF_A_noc_tags_1[0]), /* 1 */
+	{ 0, 0, NativeInteger_constraint },
+	0, 0,	/* No members */
+	0	/* No specifics */
+};
+
+
+/*** <<< INCLUDES [B-0-0] >>> ***/
+
+#include <NativeInteger.h>
+
+/*** <<< TYPE-DECLS [B-0-0] >>> ***/
+
+typedef long	 B_0_0_t;
+
+/*** <<< FUNC-DECLS [B-0-0] >>> ***/
+
+extern asn_TYPE_descriptor_t asn_DEF_B_0_0;
+asn_struct_free_f B_0_0_free;
+asn_struct_print_f B_0_0_print;
+asn_constr_check_f B_0_0_constraint;
+ber_type_decoder_f B_0_0_decode_ber;
+der_type_encoder_f B_0_0_encode_der;
+xer_type_decoder_f B_0_0_decode_xer;
+xer_type_encoder_f B_0_0_encode_xer;
+oer_type_decoder_f B_0_0_decode_oer;
+oer_type_encoder_f B_0_0_encode_oer;
+
+/*** <<< CODE [B-0-0] >>> ***/
+
+int
+B_0_0_constraint(const asn_TYPE_descriptor_t *td, const void *sptr,
+			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
+	long value;
+	
+	if(!sptr) {
+		ASN__CTFAIL(app_key, td, sptr,
+			"%s: value not given (%s:%d)",
+			td->name, __FILE__, __LINE__);
+		return -1;
+	}
+	
+	value = *(const long *)sptr;
+	
+	if((value == 0)) {
+		/* Constraint check succeeded */
+		return 0;
+	} else {
+		ASN__CTFAIL(app_key, td, sptr,
+			"%s: constraint failed (%s:%d)",
+			td->name, __FILE__, __LINE__);
+		return -1;
+	}
+}
+
+/*
+ * This type is implemented using NativeInteger,
+ * so here we adjust the DEF accordingly.
+ */
+
+/*** <<< CTDEFS [B-0-0] >>> ***/
+
+static asn_oer_constraints_t asn_OER_type_B_0_0_constr_1 CC_NOTUSED = {
+	{ 1, 1 }	/* (0..0) */,
+	-1};
+
+/*** <<< STAT-DEFS [B-0-0] >>> ***/
+
+static const ber_tlv_tag_t asn_DEF_B_0_0_tags_1[] = {
+	(ASN_TAG_CLASS_UNIVERSAL | (2 << 2))
+};
+asn_TYPE_descriptor_t asn_DEF_B_0_0 = {
+	"B-0-0",
+	"B-0-0",
+	&asn_OP_NativeInteger,
+	asn_DEF_B_0_0_tags_1,
+	sizeof(asn_DEF_B_0_0_tags_1)
+		/sizeof(asn_DEF_B_0_0_tags_1[0]), /* 1 */
+	asn_DEF_B_0_0_tags_1,	/* Same as above */
+	sizeof(asn_DEF_B_0_0_tags_1)
+		/sizeof(asn_DEF_B_0_0_tags_1[0]), /* 1 */
+	{ &asn_OER_type_B_0_0_constr_1, 0, B_0_0_constraint },
+	0, 0,	/* No members */
+	0	/* No specifics */
+};
+
+
+/*** <<< INCLUDES [C-1-2] >>> ***/
+
+#include <NativeInteger.h>
+
+/*** <<< TYPE-DECLS [C-1-2] >>> ***/
+
+typedef long	 C_1_2_t;
+
+/*** <<< FUNC-DECLS [C-1-2] >>> ***/
+
+extern asn_TYPE_descriptor_t asn_DEF_C_1_2;
+asn_struct_free_f C_1_2_free;
+asn_struct_print_f C_1_2_print;
+asn_constr_check_f C_1_2_constraint;
+ber_type_decoder_f C_1_2_decode_ber;
+der_type_encoder_f C_1_2_encode_der;
+xer_type_decoder_f C_1_2_decode_xer;
+xer_type_encoder_f C_1_2_encode_xer;
+oer_type_decoder_f C_1_2_decode_oer;
+oer_type_encoder_f C_1_2_encode_oer;
+
+/*** <<< CODE [C-1-2] >>> ***/
+
+int
+C_1_2_constraint(const asn_TYPE_descriptor_t *td, const void *sptr,
+			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
+	long value;
+	
+	if(!sptr) {
+		ASN__CTFAIL(app_key, td, sptr,
+			"%s: value not given (%s:%d)",
+			td->name, __FILE__, __LINE__);
+		return -1;
+	}
+	
+	value = *(const long *)sptr;
+	
+	if((value >= 1 && value <= 2)) {
+		/* Constraint check succeeded */
+		return 0;
+	} else {
+		ASN__CTFAIL(app_key, td, sptr,
+			"%s: constraint failed (%s:%d)",
+			td->name, __FILE__, __LINE__);
+		return -1;
+	}
+}
+
+/*
+ * This type is implemented using NativeInteger,
+ * so here we adjust the DEF accordingly.
+ */
+
+/*** <<< CTDEFS [C-1-2] >>> ***/
+
+static asn_oer_constraints_t asn_OER_type_C_1_2_constr_1 CC_NOTUSED = {
+	{ 1, 1 }	/* (1..2) */,
+	-1};
+
+/*** <<< STAT-DEFS [C-1-2] >>> ***/
+
+static const ber_tlv_tag_t asn_DEF_C_1_2_tags_1[] = {
+	(ASN_TAG_CLASS_UNIVERSAL | (2 << 2))
+};
+asn_TYPE_descriptor_t asn_DEF_C_1_2 = {
+	"C-1-2",
+	"C-1-2",
+	&asn_OP_NativeInteger,
+	asn_DEF_C_1_2_tags_1,
+	sizeof(asn_DEF_C_1_2_tags_1)
+		/sizeof(asn_DEF_C_1_2_tags_1[0]), /* 1 */
+	asn_DEF_C_1_2_tags_1,	/* Same as above */
+	sizeof(asn_DEF_C_1_2_tags_1)
+		/sizeof(asn_DEF_C_1_2_tags_1[0]), /* 1 */
+	{ &asn_OER_type_C_1_2_constr_1, 0, C_1_2_constraint },
+	0, 0,	/* No members */
+	0	/* No specifics */
+};
+
+
+/*** <<< INCLUDES [D-inv] >>> ***/
+
+#include <NativeInteger.h>
+
+/*** <<< TYPE-DECLS [D-inv] >>> ***/
+
+typedef long	 D_inv_t;
+
+/*** <<< FUNC-DECLS [D-inv] >>> ***/
+
+extern asn_TYPE_descriptor_t asn_DEF_D_inv;
+asn_struct_free_f D_inv_free;
+asn_struct_print_f D_inv_print;
+asn_constr_check_f D_inv_constraint;
+ber_type_decoder_f D_inv_decode_ber;
+der_type_encoder_f D_inv_encode_der;
+xer_type_decoder_f D_inv_decode_xer;
+xer_type_encoder_f D_inv_encode_xer;
+oer_type_decoder_f D_inv_decode_oer;
+oer_type_encoder_f D_inv_encode_oer;
+
+/*** <<< CODE [D-inv] >>> ***/
+
+int
+D_inv_constraint(const asn_TYPE_descriptor_t *td, const void *sptr,
+			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
+	long value;
+	
+	if(!sptr) {
+		ASN__CTFAIL(app_key, td, sptr,
+			"%s: value not given (%s:%d)",
+			td->name, __FILE__, __LINE__);
+		return -1;
+	}
+	
+	value = *(const long *)sptr;
+	
+	if((value >= 0 && value <= 10)) {
+		/* Constraint check succeeded */
+		return 0;
+	} else {
+		ASN__CTFAIL(app_key, td, sptr,
+			"%s: constraint failed (%s:%d)",
+			td->name, __FILE__, __LINE__);
+		return -1;
+	}
+}
+
+/*
+ * This type is implemented using NativeInteger,
+ * so here we adjust the DEF accordingly.
+ */
+
+/*** <<< CTDEFS [D-inv] >>> ***/
+
+static asn_oer_constraints_t asn_OER_type_D_inv_constr_1 CC_NOTUSED = {
+	{ 0, 0 },
+	-1};
+
+/*** <<< STAT-DEFS [D-inv] >>> ***/
+
+static const ber_tlv_tag_t asn_DEF_D_inv_tags_1[] = {
+	(ASN_TAG_CLASS_UNIVERSAL | (2 << 2))
+};
+asn_TYPE_descriptor_t asn_DEF_D_inv = {
+	"D-inv",
+	"D-inv",
+	&asn_OP_NativeInteger,
+	asn_DEF_D_inv_tags_1,
+	sizeof(asn_DEF_D_inv_tags_1)
+		/sizeof(asn_DEF_D_inv_tags_1[0]), /* 1 */
+	asn_DEF_D_inv_tags_1,	/* Same as above */
+	sizeof(asn_DEF_D_inv_tags_1)
+		/sizeof(asn_DEF_D_inv_tags_1[0]), /* 1 */
+	{ &asn_OER_type_D_inv_constr_1, 0, D_inv_constraint },
+	0, 0,	/* No members */
+	0	/* No specifics */
+};
+
+
+/*** <<< INCLUDES [E-2-5] >>> ***/
+
+#include <NativeInteger.h>
+
+/*** <<< TYPE-DECLS [E-2-5] >>> ***/
+
+typedef long	 E_2_5_t;
+
+/*** <<< FUNC-DECLS [E-2-5] >>> ***/
+
+extern asn_TYPE_descriptor_t asn_DEF_E_2_5;
+asn_struct_free_f E_2_5_free;
+asn_struct_print_f E_2_5_print;
+asn_constr_check_f E_2_5_constraint;
+ber_type_decoder_f E_2_5_decode_ber;
+der_type_encoder_f E_2_5_encode_der;
+xer_type_decoder_f E_2_5_decode_xer;
+xer_type_encoder_f E_2_5_encode_xer;
+oer_type_decoder_f E_2_5_decode_oer;
+oer_type_encoder_f E_2_5_encode_oer;
+
+/*** <<< CODE [E-2-5] >>> ***/
+
+int
+E_2_5_constraint(const asn_TYPE_descriptor_t *td, const void *sptr,
+			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
+	long value;
+	
+	if(!sptr) {
+		ASN__CTFAIL(app_key, td, sptr,
+			"%s: value not given (%s:%d)",
+			td->name, __FILE__, __LINE__);
+		return -1;
+	}
+	
+	value = *(const long *)sptr;
+	
+	if((value >= 2 && value <= 5)) {
+		/* Constraint check succeeded */
+		return 0;
+	} else {
+		ASN__CTFAIL(app_key, td, sptr,
+			"%s: constraint failed (%s:%d)",
+			td->name, __FILE__, __LINE__);
+		return -1;
+	}
+}
+
+/*
+ * This type is implemented using NativeInteger,
+ * so here we adjust the DEF accordingly.
+ */
+
+/*** <<< CTDEFS [E-2-5] >>> ***/
+
+static asn_oer_constraints_t asn_OER_type_E_2_5_constr_1 CC_NOTUSED = {
+	{ 1, 1 }	/* (2..5) */,
+	-1};
+
+/*** <<< STAT-DEFS [E-2-5] >>> ***/
+
+static const ber_tlv_tag_t asn_DEF_E_2_5_tags_1[] = {
+	(ASN_TAG_CLASS_UNIVERSAL | (2 << 2))
+};
+asn_TYPE_descriptor_t asn_DEF_E_2_5 = {
+	"E-2-5",
+	"E-2-5",
+	&asn_OP_NativeInteger,
+	asn_DEF_E_2_5_tags_1,
+	sizeof(asn_DEF_E_2_5_tags_1)
+		/sizeof(asn_DEF_E_2_5_tags_1[0]), /* 1 */
+	asn_DEF_E_2_5_tags_1,	/* Same as above */
+	sizeof(asn_DEF_E_2_5_tags_1)
+		/sizeof(asn_DEF_E_2_5_tags_1[0]), /* 1 */
+	{ &asn_OER_type_E_2_5_constr_1, 0, E_2_5_constraint },
+	0, 0,	/* No members */
+	0	/* No specifics */
+};
+
+
+/*** <<< INCLUDES [F-inv] >>> ***/
+
+#include <NativeInteger.h>
+
+/*** <<< TYPE-DECLS [F-inv] >>> ***/
+
+typedef long	 F_inv_t;
+
+/*** <<< FUNC-DECLS [F-inv] >>> ***/
+
+extern asn_TYPE_descriptor_t asn_DEF_F_inv;
+asn_struct_free_f F_inv_free;
+asn_struct_print_f F_inv_print;
+asn_constr_check_f F_inv_constraint;
+ber_type_decoder_f F_inv_decode_ber;
+der_type_encoder_f F_inv_encode_der;
+xer_type_decoder_f F_inv_decode_xer;
+xer_type_encoder_f F_inv_encode_xer;
+oer_type_decoder_f F_inv_decode_oer;
+oer_type_encoder_f F_inv_encode_oer;
+
+/*** <<< CODE [F-inv] >>> ***/
+
+int
+F_inv_constraint(const asn_TYPE_descriptor_t *td, const void *sptr,
+			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
+	long value;
+	
+	if(!sptr) {
+		ASN__CTFAIL(app_key, td, sptr,
+			"%s: value not given (%s:%d)",
+			td->name, __FILE__, __LINE__);
+		return -1;
+	}
+	
+	value = *(const long *)sptr;
+	
+	if((value >= 2 && value <= 5)) {
+		/* Constraint check succeeded */
+		return 0;
+	} else {
+		ASN__CTFAIL(app_key, td, sptr,
+			"%s: constraint failed (%s:%d)",
+			td->name, __FILE__, __LINE__);
+		return -1;
+	}
+}
+
+/*
+ * This type is implemented using NativeInteger,
+ * so here we adjust the DEF accordingly.
+ */
+
+/*** <<< CTDEFS [F-inv] >>> ***/
+
+static asn_oer_constraints_t asn_OER_type_F_inv_constr_1 CC_NOTUSED = {
+	{ 1, 1 }	/* (0..10) */,
+	-1};
+
+/*** <<< STAT-DEFS [F-inv] >>> ***/
+
+static const ber_tlv_tag_t asn_DEF_F_inv_tags_1[] = {
+	(ASN_TAG_CLASS_UNIVERSAL | (2 << 2))
+};
+asn_TYPE_descriptor_t asn_DEF_F_inv = {
+	"F-inv",
+	"F-inv",
+	&asn_OP_NativeInteger,
+	asn_DEF_F_inv_tags_1,
+	sizeof(asn_DEF_F_inv_tags_1)
+		/sizeof(asn_DEF_F_inv_tags_1[0]), /* 1 */
+	asn_DEF_F_inv_tags_1,	/* Same as above */
+	sizeof(asn_DEF_F_inv_tags_1)
+		/sizeof(asn_DEF_F_inv_tags_1[0]), /* 1 */
+	{ &asn_OER_type_F_inv_constr_1, 0, F_inv_constraint },
+	0, 0,	/* No members */
+	0	/* No specifics */
+};
+
+
+/*** <<< INCLUDES [G-3-3] >>> ***/
+
+#include <NativeInteger.h>
+
+/*** <<< TYPE-DECLS [G-3-3] >>> ***/
+
+typedef long	 G_3_3_t;
+
+/*** <<< FUNC-DECLS [G-3-3] >>> ***/
+
+extern asn_TYPE_descriptor_t asn_DEF_G_3_3;
+asn_struct_free_f G_3_3_free;
+asn_struct_print_f G_3_3_print;
+asn_constr_check_f G_3_3_constraint;
+ber_type_decoder_f G_3_3_decode_ber;
+der_type_encoder_f G_3_3_encode_der;
+xer_type_decoder_f G_3_3_decode_xer;
+xer_type_encoder_f G_3_3_encode_xer;
+oer_type_decoder_f G_3_3_decode_oer;
+oer_type_encoder_f G_3_3_encode_oer;
+
+/*** <<< CODE [G-3-3] >>> ***/
+
+int
+G_3_3_constraint(const asn_TYPE_descriptor_t *td, const void *sptr,
+			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
+	long value;
+	
+	if(!sptr) {
+		ASN__CTFAIL(app_key, td, sptr,
+			"%s: value not given (%s:%d)",
+			td->name, __FILE__, __LINE__);
+		return -1;
+	}
+	
+	value = *(const long *)sptr;
+	
+	if((value == 3)) {
+		/* Constraint check succeeded */
+		return 0;
+	} else {
+		ASN__CTFAIL(app_key, td, sptr,
+			"%s: constraint failed (%s:%d)",
+			td->name, __FILE__, __LINE__);
+		return -1;
+	}
+}
+
+/*
+ * This type is implemented using NativeInteger,
+ * so here we adjust the DEF accordingly.
+ */
+
+/*** <<< CTDEFS [G-3-3] >>> ***/
+
+static asn_oer_constraints_t asn_OER_type_G_3_3_constr_1 CC_NOTUSED = {
+	{ 1, 1 }	/* (3..3) */,
+	-1};
+
+/*** <<< STAT-DEFS [G-3-3] >>> ***/
+
+static const ber_tlv_tag_t asn_DEF_G_3_3_tags_1[] = {
+	(ASN_TAG_CLASS_UNIVERSAL | (2 << 2))
+};
+asn_TYPE_descriptor_t asn_DEF_G_3_3 = {
+	"G-3-3",
+	"G-3-3",
+	&asn_OP_NativeInteger,
+	asn_DEF_G_3_3_tags_1,
+	sizeof(asn_DEF_G_3_3_tags_1)
+		/sizeof(asn_DEF_G_3_3_tags_1[0]), /* 1 */
+	asn_DEF_G_3_3_tags_1,	/* Same as above */
+	sizeof(asn_DEF_G_3_3_tags_1)
+		/sizeof(asn_DEF_G_3_3_tags_1[0]), /* 1 */
+	{ &asn_OER_type_G_3_3_constr_1, 0, G_3_3_constraint },
+	0, 0,	/* No members */
+	0	/* No specifics */
+};
+
+
+/*** <<< INCLUDES [H-4-5] >>> ***/
+
+#include <NativeInteger.h>
+
+/*** <<< TYPE-DECLS [H-4-5] >>> ***/
+
+typedef long	 H_4_5_t;
+
+/*** <<< FUNC-DECLS [H-4-5] >>> ***/
+
+extern asn_TYPE_descriptor_t asn_DEF_H_4_5;
+asn_struct_free_f H_4_5_free;
+asn_struct_print_f H_4_5_print;
+asn_constr_check_f H_4_5_constraint;
+ber_type_decoder_f H_4_5_decode_ber;
+der_type_encoder_f H_4_5_encode_der;
+xer_type_decoder_f H_4_5_decode_xer;
+xer_type_encoder_f H_4_5_encode_xer;
+oer_type_decoder_f H_4_5_decode_oer;
+oer_type_encoder_f H_4_5_encode_oer;
+
+/*** <<< CODE [H-4-5] >>> ***/
+
+int
+H_4_5_constraint(const asn_TYPE_descriptor_t *td, const void *sptr,
+			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
+	long value;
+	
+	if(!sptr) {
+		ASN__CTFAIL(app_key, td, sptr,
+			"%s: value not given (%s:%d)",
+			td->name, __FILE__, __LINE__);
+		return -1;
+	}
+	
+	value = *(const long *)sptr;
+	
+	if((value >= 4 && value <= 5)) {
+		/* Constraint check succeeded */
+		return 0;
+	} else {
+		ASN__CTFAIL(app_key, td, sptr,
+			"%s: constraint failed (%s:%d)",
+			td->name, __FILE__, __LINE__);
+		return -1;
+	}
+}
+
+/*
+ * This type is implemented using NativeInteger,
+ * so here we adjust the DEF accordingly.
+ */
+
+/*** <<< CTDEFS [H-4-5] >>> ***/
+
+static asn_oer_constraints_t asn_OER_type_H_4_5_constr_1 CC_NOTUSED = {
+	{ 1, 1 }	/* (4..5) */,
+	-1};
+
+/*** <<< STAT-DEFS [H-4-5] >>> ***/
+
+static const ber_tlv_tag_t asn_DEF_H_4_5_tags_1[] = {
+	(ASN_TAG_CLASS_UNIVERSAL | (2 << 2))
+};
+asn_TYPE_descriptor_t asn_DEF_H_4_5 = {
+	"H-4-5",
+	"H-4-5",
+	&asn_OP_NativeInteger,
+	asn_DEF_H_4_5_tags_1,
+	sizeof(asn_DEF_H_4_5_tags_1)
+		/sizeof(asn_DEF_H_4_5_tags_1[0]), /* 1 */
+	asn_DEF_H_4_5_tags_1,	/* Same as above */
+	sizeof(asn_DEF_H_4_5_tags_1)
+		/sizeof(asn_DEF_H_4_5_tags_1[0]), /* 1 */
+	{ &asn_OER_type_H_4_5_constr_1, 0, H_4_5_constraint },
+	0, 0,	/* No members */
+	0	/* No specifics */
+};
+
+
+/*** <<< INCLUDES [I-1-5] >>> ***/
+
+#include <NativeInteger.h>
+
+/*** <<< TYPE-DECLS [I-1-5] >>> ***/
+
+typedef long	 I_1_5_t;
+
+/*** <<< FUNC-DECLS [I-1-5] >>> ***/
+
+extern asn_TYPE_descriptor_t asn_DEF_I_1_5;
+asn_struct_free_f I_1_5_free;
+asn_struct_print_f I_1_5_print;
+asn_constr_check_f I_1_5_constraint;
+ber_type_decoder_f I_1_5_decode_ber;
+der_type_encoder_f I_1_5_encode_der;
+xer_type_decoder_f I_1_5_decode_xer;
+xer_type_encoder_f I_1_5_encode_xer;
+oer_type_decoder_f I_1_5_decode_oer;
+oer_type_encoder_f I_1_5_encode_oer;
+
+/*** <<< CODE [I-1-5] >>> ***/
+
+int
+I_1_5_constraint(const asn_TYPE_descriptor_t *td, const void *sptr,
+			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
+	long value;
+	
+	if(!sptr) {
+		ASN__CTFAIL(app_key, td, sptr,
+			"%s: value not given (%s:%d)",
+			td->name, __FILE__, __LINE__);
+		return -1;
+	}
+	
+	value = *(const long *)sptr;
+	
+	if((value >= 1 && value <= 5)) {
+		/* Constraint check succeeded */
+		return 0;
+	} else {
+		ASN__CTFAIL(app_key, td, sptr,
+			"%s: constraint failed (%s:%d)",
+			td->name, __FILE__, __LINE__);
+		return -1;
+	}
+}
+
+/*
+ * This type is implemented using NativeInteger,
+ * so here we adjust the DEF accordingly.
+ */
+
+/*** <<< CTDEFS [I-1-5] >>> ***/
+
+static asn_oer_constraints_t asn_OER_type_I_1_5_constr_1 CC_NOTUSED = {
+	{ 1, 1 }	/* (1..5) */,
+	-1};
+
+/*** <<< STAT-DEFS [I-1-5] >>> ***/
+
+static const ber_tlv_tag_t asn_DEF_I_1_5_tags_1[] = {
+	(ASN_TAG_CLASS_UNIVERSAL | (2 << 2))
+};
+asn_TYPE_descriptor_t asn_DEF_I_1_5 = {
+	"I-1-5",
+	"I-1-5",
+	&asn_OP_NativeInteger,
+	asn_DEF_I_1_5_tags_1,
+	sizeof(asn_DEF_I_1_5_tags_1)
+		/sizeof(asn_DEF_I_1_5_tags_1[0]), /* 1 */
+	asn_DEF_I_1_5_tags_1,	/* Same as above */
+	sizeof(asn_DEF_I_1_5_tags_1)
+		/sizeof(asn_DEF_I_1_5_tags_1[0]), /* 1 */
+	{ &asn_OER_type_I_1_5_constr_1, 0, I_1_5_constraint },
+	0, 0,	/* No members */
+	0	/* No specifics */
+};
+
+
+/*** <<< INCLUDES [J-4-5] >>> ***/
+
+#include <NativeInteger.h>
+
+/*** <<< TYPE-DECLS [J-4-5] >>> ***/
+
+typedef long	 J_4_5_t;
+
+/*** <<< FUNC-DECLS [J-4-5] >>> ***/
+
+extern asn_TYPE_descriptor_t asn_DEF_J_4_5;
+asn_struct_free_f J_4_5_free;
+asn_struct_print_f J_4_5_print;
+asn_constr_check_f J_4_5_constraint;
+ber_type_decoder_f J_4_5_decode_ber;
+der_type_encoder_f J_4_5_encode_der;
+xer_type_decoder_f J_4_5_decode_xer;
+xer_type_encoder_f J_4_5_encode_xer;
+oer_type_decoder_f J_4_5_decode_oer;
+oer_type_encoder_f J_4_5_encode_oer;
+
+/*** <<< CODE [J-4-5] >>> ***/
+
+int
+J_4_5_constraint(const asn_TYPE_descriptor_t *td, const void *sptr,
+			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
+	long value;
+	
+	if(!sptr) {
+		ASN__CTFAIL(app_key, td, sptr,
+			"%s: value not given (%s:%d)",
+			td->name, __FILE__, __LINE__);
+		return -1;
+	}
+	
+	value = *(const long *)sptr;
+	
+	if((value >= 4 && value <= 5)) {
+		/* Constraint check succeeded */
+		return 0;
+	} else {
+		ASN__CTFAIL(app_key, td, sptr,
+			"%s: constraint failed (%s:%d)",
+			td->name, __FILE__, __LINE__);
+		return -1;
+	}
+}
+
+/*
+ * This type is implemented using NativeInteger,
+ * so here we adjust the DEF accordingly.
+ */
+
+/*** <<< CTDEFS [J-4-5] >>> ***/
+
+static asn_oer_constraints_t asn_OER_type_J_4_5_constr_1 CC_NOTUSED = {
+	{ 1, 1 }	/* (4..5) */,
+	-1};
+
+/*** <<< STAT-DEFS [J-4-5] >>> ***/
+
+static const ber_tlv_tag_t asn_DEF_J_4_5_tags_1[] = {
+	(ASN_TAG_CLASS_UNIVERSAL | (2 << 2))
+};
+asn_TYPE_descriptor_t asn_DEF_J_4_5 = {
+	"J-4-5",
+	"J-4-5",
+	&asn_OP_NativeInteger,
+	asn_DEF_J_4_5_tags_1,
+	sizeof(asn_DEF_J_4_5_tags_1)
+		/sizeof(asn_DEF_J_4_5_tags_1[0]), /* 1 */
+	asn_DEF_J_4_5_tags_1,	/* Same as above */
+	sizeof(asn_DEF_J_4_5_tags_1)
+		/sizeof(asn_DEF_J_4_5_tags_1[0]), /* 1 */
+	{ &asn_OER_type_J_4_5_constr_1, 0, J_4_5_constraint },
+	0, 0,	/* No members */
+	0	/* No specifics */
+};
+
+
+/*** <<< INCLUDES [K-1-4] >>> ***/
+
+#include <NativeInteger.h>
+
+/*** <<< TYPE-DECLS [K-1-4] >>> ***/
+
+typedef long	 K_1_4_t;
+
+/*** <<< FUNC-DECLS [K-1-4] >>> ***/
+
+extern asn_TYPE_descriptor_t asn_DEF_K_1_4;
+asn_struct_free_f K_1_4_free;
+asn_struct_print_f K_1_4_print;
+asn_constr_check_f K_1_4_constraint;
+ber_type_decoder_f K_1_4_decode_ber;
+der_type_encoder_f K_1_4_encode_der;
+xer_type_decoder_f K_1_4_decode_xer;
+xer_type_encoder_f K_1_4_encode_xer;
+oer_type_decoder_f K_1_4_decode_oer;
+oer_type_encoder_f K_1_4_encode_oer;
+
+/*** <<< CODE [K-1-4] >>> ***/
+
+int
+K_1_4_constraint(const asn_TYPE_descriptor_t *td, const void *sptr,
+			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
+	long value;
+	
+	if(!sptr) {
+		ASN__CTFAIL(app_key, td, sptr,
+			"%s: value not given (%s:%d)",
+			td->name, __FILE__, __LINE__);
+		return -1;
+	}
+	
+	value = *(const long *)sptr;
+	
+	if((value >= 1 && value <= 4)) {
+		/* Constraint check succeeded */
+		return 0;
+	} else {
+		ASN__CTFAIL(app_key, td, sptr,
+			"%s: constraint failed (%s:%d)",
+			td->name, __FILE__, __LINE__);
+		return -1;
+	}
+}
+
+/*
+ * This type is implemented using NativeInteger,
+ * so here we adjust the DEF accordingly.
+ */
+
+/*** <<< CTDEFS [K-1-4] >>> ***/
+
+static asn_oer_constraints_t asn_OER_type_K_1_4_constr_1 CC_NOTUSED = {
+	{ 1, 1 }	/* (1..4) */,
+	-1};
+
+/*** <<< STAT-DEFS [K-1-4] >>> ***/
+
+static const ber_tlv_tag_t asn_DEF_K_1_4_tags_1[] = {
+	(ASN_TAG_CLASS_UNIVERSAL | (2 << 2))
+};
+asn_TYPE_descriptor_t asn_DEF_K_1_4 = {
+	"K-1-4",
+	"K-1-4",
+	&asn_OP_NativeInteger,
+	asn_DEF_K_1_4_tags_1,
+	sizeof(asn_DEF_K_1_4_tags_1)
+		/sizeof(asn_DEF_K_1_4_tags_1[0]), /* 1 */
+	asn_DEF_K_1_4_tags_1,	/* Same as above */
+	sizeof(asn_DEF_K_1_4_tags_1)
+		/sizeof(asn_DEF_K_1_4_tags_1[0]), /* 1 */
+	{ &asn_OER_type_K_1_4_constr_1, 0, K_1_4_constraint },
+	0, 0,	/* No members */
+	0	/* No specifics */
+};
+
+
+/*** <<< INCLUDES [L-0-5] >>> ***/
+
+#include <NativeInteger.h>
+
+/*** <<< TYPE-DECLS [L-0-5] >>> ***/
+
+typedef long	 L_0_5_t;
+
+/*** <<< FUNC-DECLS [L-0-5] >>> ***/
+
+extern asn_TYPE_descriptor_t asn_DEF_L_0_5;
+asn_struct_free_f L_0_5_free;
+asn_struct_print_f L_0_5_print;
+asn_constr_check_f L_0_5_constraint;
+ber_type_decoder_f L_0_5_decode_ber;
+der_type_encoder_f L_0_5_encode_der;
+xer_type_decoder_f L_0_5_decode_xer;
+xer_type_encoder_f L_0_5_encode_xer;
+oer_type_decoder_f L_0_5_decode_oer;
+oer_type_encoder_f L_0_5_encode_oer;
+
+/*** <<< CODE [L-0-5] >>> ***/
+
+int
+L_0_5_constraint(const asn_TYPE_descriptor_t *td, const void *sptr,
+			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
+	long value;
+	
+	if(!sptr) {
+		ASN__CTFAIL(app_key, td, sptr,
+			"%s: value not given (%s:%d)",
+			td->name, __FILE__, __LINE__);
+		return -1;
+	}
+	
+	value = *(const long *)sptr;
+	
+	if(((value == 0) || (value == 5))) {
+		/* Constraint check succeeded */
+		return 0;
+	} else {
+		ASN__CTFAIL(app_key, td, sptr,
+			"%s: constraint failed (%s:%d)",
+			td->name, __FILE__, __LINE__);
+		return -1;
+	}
+}
+
+/*
+ * This type is implemented using NativeInteger,
+ * so here we adjust the DEF accordingly.
+ */
+
+/*** <<< CTDEFS [L-0-5] >>> ***/
+
+static asn_oer_constraints_t asn_OER_type_L_0_5_constr_1 CC_NOTUSED = {
+	{ 1, 1 }	/* (0..5) */,
+	-1};
+
+/*** <<< STAT-DEFS [L-0-5] >>> ***/
+
+static const ber_tlv_tag_t asn_DEF_L_0_5_tags_1[] = {
+	(ASN_TAG_CLASS_UNIVERSAL | (2 << 2))
+};
+asn_TYPE_descriptor_t asn_DEF_L_0_5 = {
+	"L-0-5",
+	"L-0-5",
+	&asn_OP_NativeInteger,
+	asn_DEF_L_0_5_tags_1,
+	sizeof(asn_DEF_L_0_5_tags_1)
+		/sizeof(asn_DEF_L_0_5_tags_1[0]), /* 1 */
+	asn_DEF_L_0_5_tags_1,	/* Same as above */
+	sizeof(asn_DEF_L_0_5_tags_1)
+		/sizeof(asn_DEF_L_0_5_tags_1[0]), /* 1 */
+	{ &asn_OER_type_L_0_5_constr_1, 0, L_0_5_constraint },
+	0, 0,	/* No members */
+	0	/* No specifics */
+};
+
+
+/*** <<< INCLUDES [M-inv] >>> ***/
+
+#include <NativeInteger.h>
+
+/*** <<< TYPE-DECLS [M-inv] >>> ***/
+
+typedef long	 M_inv_t;
+
+/*** <<< FUNC-DECLS [M-inv] >>> ***/
+
+extern asn_TYPE_descriptor_t asn_DEF_M_inv;
+asn_struct_free_f M_inv_free;
+asn_struct_print_f M_inv_print;
+asn_constr_check_f M_inv_constraint;
+ber_type_decoder_f M_inv_decode_ber;
+der_type_encoder_f M_inv_encode_der;
+xer_type_decoder_f M_inv_decode_xer;
+xer_type_encoder_f M_inv_encode_xer;
+oer_type_decoder_f M_inv_decode_oer;
+oer_type_encoder_f M_inv_encode_oer;
+
+/*** <<< CODE [M-inv] >>> ***/
+
+int
+M_inv_constraint(const asn_TYPE_descriptor_t *td, const void *sptr,
+			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
+	long value;
+	
+	if(!sptr) {
+		ASN__CTFAIL(app_key, td, sptr,
+			"%s: value not given (%s:%d)",
+			td->name, __FILE__, __LINE__);
+		return -1;
+	}
+	
+	value = *(const long *)sptr;
+	
+	if((value >= 0 && value <= 5)) {
+		/* Constraint check succeeded */
+		return 0;
+	} else {
+		ASN__CTFAIL(app_key, td, sptr,
+			"%s: constraint failed (%s:%d)",
+			td->name, __FILE__, __LINE__);
+		return -1;
+	}
+}
+
+/*
+ * This type is implemented using NativeInteger,
+ * so here we adjust the DEF accordingly.
+ */
+
+/*** <<< CTDEFS [M-inv] >>> ***/
+
+static asn_oer_constraints_t asn_OER_type_M_inv_constr_1 CC_NOTUSED = {
+	{ 0, 0 },
+	-1};
+
+/*** <<< STAT-DEFS [M-inv] >>> ***/
+
+static const ber_tlv_tag_t asn_DEF_M_inv_tags_1[] = {
+	(ASN_TAG_CLASS_UNIVERSAL | (2 << 2))
+};
+asn_TYPE_descriptor_t asn_DEF_M_inv = {
+	"M-inv",
+	"M-inv",
+	&asn_OP_NativeInteger,
+	asn_DEF_M_inv_tags_1,
+	sizeof(asn_DEF_M_inv_tags_1)
+		/sizeof(asn_DEF_M_inv_tags_1[0]), /* 1 */
+	asn_DEF_M_inv_tags_1,	/* Same as above */
+	sizeof(asn_DEF_M_inv_tags_1)
+		/sizeof(asn_DEF_M_inv_tags_1[0]), /* 1 */
+	{ &asn_OER_type_M_inv_constr_1, 0, M_inv_constraint },
+	0, 0,	/* No members */
+	0	/* No specifics */
+};
+
+
+/*** <<< INCLUDES [N-0-5] >>> ***/
+
+#include <NativeInteger.h>
+
+/*** <<< TYPE-DECLS [N-0-5] >>> ***/
+
+typedef long	 N_0_5_t;
+
+/*** <<< FUNC-DECLS [N-0-5] >>> ***/
+
+extern asn_TYPE_descriptor_t asn_DEF_N_0_5;
+asn_struct_free_f N_0_5_free;
+asn_struct_print_f N_0_5_print;
+asn_constr_check_f N_0_5_constraint;
+ber_type_decoder_f N_0_5_decode_ber;
+der_type_encoder_f N_0_5_encode_der;
+xer_type_decoder_f N_0_5_decode_xer;
+xer_type_encoder_f N_0_5_encode_xer;
+oer_type_decoder_f N_0_5_decode_oer;
+oer_type_encoder_f N_0_5_encode_oer;
+
+/*** <<< CODE [N-0-5] >>> ***/
+
+int
+N_0_5_constraint(const asn_TYPE_descriptor_t *td, const void *sptr,
+			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
+	long value;
+	
+	if(!sptr) {
+		ASN__CTFAIL(app_key, td, sptr,
+			"%s: value not given (%s:%d)",
+			td->name, __FILE__, __LINE__);
+		return -1;
+	}
+	
+	value = *(const long *)sptr;
+	
+	if((value >= 0 && value <= 5)) {
+		/* Constraint check succeeded */
+		return 0;
+	} else {
+		ASN__CTFAIL(app_key, td, sptr,
+			"%s: constraint failed (%s:%d)",
+			td->name, __FILE__, __LINE__);
+		return -1;
+	}
+}
+
+/*
+ * This type is implemented using NativeInteger,
+ * so here we adjust the DEF accordingly.
+ */
+
+/*** <<< CTDEFS [N-0-5] >>> ***/
+
+static asn_oer_constraints_t asn_OER_type_N_0_5_constr_1 CC_NOTUSED = {
+	{ 1, 1 }	/* (0..5) */,
+	-1};
+
+/*** <<< STAT-DEFS [N-0-5] >>> ***/
+
+static const ber_tlv_tag_t asn_DEF_N_0_5_tags_1[] = {
+	(ASN_TAG_CLASS_UNIVERSAL | (2 << 2))
+};
+asn_TYPE_descriptor_t asn_DEF_N_0_5 = {
+	"N-0-5",
+	"N-0-5",
+	&asn_OP_NativeInteger,
+	asn_DEF_N_0_5_tags_1,
+	sizeof(asn_DEF_N_0_5_tags_1)
+		/sizeof(asn_DEF_N_0_5_tags_1[0]), /* 1 */
+	asn_DEF_N_0_5_tags_1,	/* Same as above */
+	sizeof(asn_DEF_N_0_5_tags_1)
+		/sizeof(asn_DEF_N_0_5_tags_1[0]), /* 1 */
+	{ &asn_OER_type_N_0_5_constr_1, 0, N_0_5_constraint },
+	0, 0,	/* No members */
+	0	/* No specifics */
+};
+
+
+/*** <<< INCLUDES [O-inv] >>> ***/
+
+#include <NativeInteger.h>
+
+/*** <<< TYPE-DECLS [O-inv] >>> ***/
+
+typedef long	 O_inv_t;
+
+/*** <<< FUNC-DECLS [O-inv] >>> ***/
+
+extern asn_TYPE_descriptor_t asn_DEF_O_inv;
+asn_struct_free_f O_inv_free;
+asn_struct_print_f O_inv_print;
+asn_constr_check_f O_inv_constraint;
+ber_type_decoder_f O_inv_decode_ber;
+der_type_encoder_f O_inv_encode_der;
+xer_type_decoder_f O_inv_decode_xer;
+xer_type_encoder_f O_inv_encode_xer;
+oer_type_decoder_f O_inv_decode_oer;
+oer_type_encoder_f O_inv_encode_oer;
+
+/*** <<< CODE [O-inv] >>> ***/
+
+int
+O_inv_constraint(const asn_TYPE_descriptor_t *td, const void *sptr,
+			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
+	long value;
+	
+	if(!sptr) {
+		ASN__CTFAIL(app_key, td, sptr,
+			"%s: value not given (%s:%d)",
+			td->name, __FILE__, __LINE__);
+		return -1;
+	}
+	
+	value = *(const long *)sptr;
+	
+	if((value >= 0 && value <= 5)) {
+		/* Constraint check succeeded */
+		return 0;
+	} else {
+		ASN__CTFAIL(app_key, td, sptr,
+			"%s: constraint failed (%s:%d)",
+			td->name, __FILE__, __LINE__);
+		return -1;
+	}
+}
+
+/*
+ * This type is implemented using NativeInteger,
+ * so here we adjust the DEF accordingly.
+ */
+
+/*** <<< CTDEFS [O-inv] >>> ***/
+
+static asn_oer_constraints_t asn_OER_type_O_inv_constr_1 CC_NOTUSED = {
+	{ 0, 0 },
+	-1};
+
+/*** <<< STAT-DEFS [O-inv] >>> ***/
+
+static const ber_tlv_tag_t asn_DEF_O_inv_tags_1[] = {
+	(ASN_TAG_CLASS_UNIVERSAL | (2 << 2))
+};
+asn_TYPE_descriptor_t asn_DEF_O_inv = {
+	"O-inv",
+	"O-inv",
+	&asn_OP_NativeInteger,
+	asn_DEF_O_inv_tags_1,
+	sizeof(asn_DEF_O_inv_tags_1)
+		/sizeof(asn_DEF_O_inv_tags_1[0]), /* 1 */
+	asn_DEF_O_inv_tags_1,	/* Same as above */
+	sizeof(asn_DEF_O_inv_tags_1)
+		/sizeof(asn_DEF_O_inv_tags_1[0]), /* 1 */
+	{ &asn_OER_type_O_inv_constr_1, 0, O_inv_constraint },
+	0, 0,	/* No members */
+	0	/* No specifics */
+};
+
+
+/*** <<< INCLUDES [EConstr] >>> ***/
+
+#include <NativeInteger.h>
+
+/*** <<< TYPE-DECLS [EConstr] >>> ***/
+
+typedef long	 EConstr_t;
+
+/*** <<< FUNC-DECLS [EConstr] >>> ***/
+
+extern asn_TYPE_descriptor_t asn_DEF_EConstr;
+asn_struct_free_f EConstr_free;
+asn_struct_print_f EConstr_print;
+asn_constr_check_f EConstr_constraint;
+ber_type_decoder_f EConstr_decode_ber;
+der_type_encoder_f EConstr_encode_der;
+xer_type_decoder_f EConstr_decode_xer;
+xer_type_encoder_f EConstr_encode_xer;
+oer_type_decoder_f EConstr_decode_oer;
+oer_type_encoder_f EConstr_encode_oer;
+
+/*** <<< CODE [EConstr] >>> ***/
+
+int
+EConstr_constraint(const asn_TYPE_descriptor_t *td, const void *sptr,
+			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
+	long value;
+	
+	if(!sptr) {
+		ASN__CTFAIL(app_key, td, sptr,
+			"%s: value not given (%s:%d)",
+			td->name, __FILE__, __LINE__);
+		return -1;
+	}
+	
+	value = *(const long *)sptr;
+	
+	if((value >= 1 && value <= 5)) {
+		/* Constraint check succeeded */
+		return 0;
+	} else {
+		ASN__CTFAIL(app_key, td, sptr,
+			"%s: constraint failed (%s:%d)",
+			td->name, __FILE__, __LINE__);
+		return -1;
+	}
+}
+
+/*
+ * This type is implemented using NativeInteger,
+ * so here we adjust the DEF accordingly.
+ */
+
+/*** <<< CTDEFS [EConstr] >>> ***/
+
+static asn_oer_constraints_t asn_OER_type_EConstr_constr_1 CC_NOTUSED = {
+	{ 0, 0 },
+	-1};
+
+/*** <<< STAT-DEFS [EConstr] >>> ***/
+
+static const ber_tlv_tag_t asn_DEF_EConstr_tags_1[] = {
+	(ASN_TAG_CLASS_UNIVERSAL | (2 << 2))
+};
+asn_TYPE_descriptor_t asn_DEF_EConstr = {
+	"EConstr",
+	"EConstr",
+	&asn_OP_NativeInteger,
+	asn_DEF_EConstr_tags_1,
+	sizeof(asn_DEF_EConstr_tags_1)
+		/sizeof(asn_DEF_EConstr_tags_1[0]), /* 1 */
+	asn_DEF_EConstr_tags_1,	/* Same as above */
+	sizeof(asn_DEF_EConstr_tags_1)
+		/sizeof(asn_DEF_EConstr_tags_1[0]), /* 1 */
+	{ &asn_OER_type_EConstr_constr_1, 0, EConstr_constraint },
+	0, 0,	/* No members */
+	0	/* No specifics */
+};
+
+
+/*** <<< INCLUDES [FConstr] >>> ***/
+
+#include <NativeInteger.h>
+
+/*** <<< TYPE-DECLS [FConstr] >>> ***/
+
+typedef long	 FConstr_t;
+
+/*** <<< FUNC-DECLS [FConstr] >>> ***/
+
+extern asn_TYPE_descriptor_t asn_DEF_FConstr;
+asn_struct_free_f FConstr_free;
+asn_struct_print_f FConstr_print;
+asn_constr_check_f FConstr_constraint;
+ber_type_decoder_f FConstr_decode_ber;
+der_type_encoder_f FConstr_encode_der;
+xer_type_decoder_f FConstr_decode_xer;
+xer_type_encoder_f FConstr_encode_xer;
+oer_type_decoder_f FConstr_decode_oer;
+oer_type_encoder_f FConstr_encode_oer;
+
+/*** <<< CODE [FConstr] >>> ***/
+
+int
+FConstr_constraint(const asn_TYPE_descriptor_t *td, const void *sptr,
+			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
+	long value;
+	
+	if(!sptr) {
+		ASN__CTFAIL(app_key, td, sptr,
+			"%s: value not given (%s:%d)",
+			td->name, __FILE__, __LINE__);
+		return -1;
+	}
+	
+	value = *(const long *)sptr;
+	
+	if((value >= 0 && value <= 4)) {
+		/* Constraint check succeeded */
+		return 0;
+	} else {
+		ASN__CTFAIL(app_key, td, sptr,
+			"%s: constraint failed (%s:%d)",
+			td->name, __FILE__, __LINE__);
+		return -1;
+	}
+}
+
+/*
+ * This type is implemented using NativeInteger,
+ * so here we adjust the DEF accordingly.
+ */
+
+/*** <<< CTDEFS [FConstr] >>> ***/
+
+static asn_oer_constraints_t asn_OER_type_FConstr_constr_1 CC_NOTUSED = {
+	{ 1, 1 }	/* (0..4) */,
+	-1};
+
+/*** <<< STAT-DEFS [FConstr] >>> ***/
+
+static const ber_tlv_tag_t asn_DEF_FConstr_tags_1[] = {
+	(ASN_TAG_CLASS_UNIVERSAL | (2 << 2))
+};
+asn_TYPE_descriptor_t asn_DEF_FConstr = {
+	"FConstr",
+	"FConstr",
+	&asn_OP_NativeInteger,
+	asn_DEF_FConstr_tags_1,
+	sizeof(asn_DEF_FConstr_tags_1)
+		/sizeof(asn_DEF_FConstr_tags_1[0]), /* 1 */
+	asn_DEF_FConstr_tags_1,	/* Same as above */
+	sizeof(asn_DEF_FConstr_tags_1)
+		/sizeof(asn_DEF_FConstr_tags_1[0]), /* 1 */
+	{ &asn_OER_type_FConstr_constr_1, 0, FConstr_constraint },
+	0, 0,	/* No members */
+	0	/* No specifics */
+};
+

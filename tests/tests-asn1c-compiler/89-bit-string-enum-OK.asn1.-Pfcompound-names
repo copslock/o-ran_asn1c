@@ -1,0 +1,73 @@
+
+/*** <<< INCLUDES [T] >>> ***/
+
+#include <BIT_STRING.h>
+#include <constr_CHOICE.h>
+
+/*** <<< DEPS [T] >>> ***/
+
+typedef enum T_PR {
+	T_PR_NOTHING,	/* No components present */
+	T_PR_bs
+} T_PR;
+typedef enum T__bs {
+	T__bs_a	= 1,
+	T__bs_b	= 2
+} e_T__bs;
+
+/*** <<< TYPE-DECLS [T] >>> ***/
+
+typedef struct T {
+	T_PR present;
+	union T_u {
+		BIT_STRING_t	 bs;
+	} choice;
+	
+	/* Context for parsing across buffer boundaries */
+	asn_struct_ctx_t _asn_ctx;
+} T_t;
+
+/*** <<< FUNC-DECLS [T] >>> ***/
+
+extern asn_TYPE_descriptor_t asn_DEF_T;
+
+/*** <<< STAT-DEFS [T] >>> ***/
+
+static asn_TYPE_member_t asn_MBR_T_1[] = {
+	{ ATF_NOFLAGS, 0, offsetof(struct T, choice.bs),
+		.tag = (ASN_TAG_CLASS_UNIVERSAL | (3 << 2)),
+		.tag_mode = 0,
+		.type = &asn_DEF_BIT_STRING,
+		.type_selector = 0,
+		{ .oer_constraints = 0, .per_constraints = 0, .general_constraints = 0 },
+		0, 0, /* No default value */
+		.name = "bs"
+		},
+};
+static const asn_TYPE_tag2member_t asn_MAP_T_tag2el_1[] = {
+    { (ASN_TAG_CLASS_UNIVERSAL | (3 << 2)), 0, 0, 0 } /* bs */
+};
+static asn_CHOICE_specifics_t asn_SPC_T_specs_1 = {
+	sizeof(struct T),
+	offsetof(struct T, _asn_ctx),
+	offsetof(struct T, present),
+	sizeof(((struct T *)0)->present),
+	.tag2el = asn_MAP_T_tag2el_1,
+	.tag2el_count = 1,	/* Count of tags in the map */
+	0, 0,
+	.first_extension = -1	/* Extensions start */
+};
+asn_TYPE_descriptor_t asn_DEF_T = {
+	"T",
+	"T",
+	&asn_OP_CHOICE,
+	0,	/* No effective tags (pointer) */
+	0,	/* No effective tags (count) */
+	0,	/* No tags (pointer) */
+	0,	/* No tags (count) */
+	{ 0, 0, CHOICE_constraint },
+	asn_MBR_T_1,
+	1,	/* Elements count */
+	&asn_SPC_T_specs_1	/* Additional specs */
+};
+

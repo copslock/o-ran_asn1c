@@ -1,0 +1,316 @@
+
+/*** <<< INCLUDES [Flag] >>> ***/
+
+#include <NativeInteger.h>
+#include <constr_SEQUENCE.h>
+#include <NativeEnumerated.h>
+
+/*** <<< DEPS [Flag] >>> ***/
+
+typedef enum Flag_15P0__field {
+	Flag_15P0__field_red	= 0,
+	Flag_15P0__field_green	= 1,
+	Flag_15P0__field_blue	= 5
+} e_Flag_15P0__field;
+typedef enum Flag_15P1__field {
+	Flag_15P1__field_red	= 3,
+	Flag_15P1__field_green	= 4,
+	Flag_15P1__field_blue	= 5
+} e_Flag_15P1__field;
+
+/*** <<< TYPE-DECLS [Flag] >>> ***/
+
+typedef struct Flag_15P0 {
+	long	*field;	/* DEFAULT 5 */
+	
+	/* Context for parsing across buffer boundaries */
+	asn_struct_ctx_t _asn_ctx;
+} Flag_15P0_t;
+typedef struct Flag_15P1 {
+	long	*field;	/* DEFAULT 5 */
+	
+	/* Context for parsing across buffer boundaries */
+	asn_struct_ctx_t _asn_ctx;
+} Flag_15P1_t;
+
+/*** <<< FUNC-DECLS [Flag] >>> ***/
+
+extern asn_TYPE_descriptor_t asn_DEF_Flag_15P0;
+extern asn_SEQUENCE_specifics_t asn_SPC_Flag_15P0_specs_1;
+extern asn_TYPE_member_t asn_MBR_Flag_15P0_1[1];
+/* extern asn_TYPE_descriptor_t asn_DEF_field_7;	// (Use -fall-defs-global to expose) */
+extern asn_TYPE_descriptor_t asn_DEF_Flag_15P1;
+extern asn_SEQUENCE_specifics_t asn_SPC_Flag_15P1_specs_6;
+extern asn_TYPE_member_t asn_MBR_Flag_15P1_6[1];
+
+/*** <<< CODE [Flag] >>> ***/
+
+/*
+ * This type is implemented using NativeEnumerated,
+ * so here we adjust the DEF accordingly.
+ */
+
+/*** <<< STAT-DEFS [Flag] >>> ***/
+
+static int asn_DFL_2_cmp_5(const void *sptr) {
+	const long *st = sptr;
+	
+	if(!st) {
+		return -1; /* No value is not a default value */
+	}
+	
+	/* Test default value 5 */
+	return (*st != 5);
+}
+static int asn_DFL_2_set_5(void **sptr) {
+	long *st = *sptr;
+	
+	if(!st) {
+		st = (*sptr = CALLOC(1, sizeof(*st)));
+		if(!st) return -1;
+	}
+	
+	/* Install default value 5 */
+	*st = 5;
+	return 0;
+}
+asn_TYPE_member_t asn_MBR_Flag_15P0_1[] = {
+	{ ATF_POINTER, 1, offsetof(struct Flag_15P0, field),
+		.tag = (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)),
+		.tag_mode = 0,
+		.type = &asn_DEF_NativeInteger,
+		.type_selector = 0,
+		{ .oer_constraints = 0, .per_constraints = 0, .general_constraints = 0 },
+		.default_value_cmp = &asn_DFL_2_cmp_5,	/* Compare DEFAULT 5 */
+		.default_value_set = &asn_DFL_2_set_5,	/* Set DEFAULT 5 */
+		.name = "field"
+		},
+};
+static const ber_tlv_tag_t asn_DEF_Flag_15P0_tags_1[] = {
+	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
+};
+static const asn_TYPE_tag2member_t asn_MAP_Flag_15P0_tag2el_1[] = {
+    { (ASN_TAG_CLASS_UNIVERSAL | (2 << 2)), 0, 0, 0 } /* field */
+};
+asn_SEQUENCE_specifics_t asn_SPC_Flag_15P0_specs_1 = {
+	sizeof(struct Flag_15P0),
+	offsetof(struct Flag_15P0, _asn_ctx),
+	.tag2el = asn_MAP_Flag_15P0_tag2el_1,
+	.tag2el_count = 1,	/* Count of tags in the map */
+	0, 0, 0,	/* Optional elements (not needed) */
+	-1,	/* First extension addition */
+};
+asn_TYPE_descriptor_t asn_DEF_Flag_15P0 = {
+	"Flag",
+	"Flag",
+	&asn_OP_SEQUENCE,
+	asn_DEF_Flag_15P0_tags_1,
+	sizeof(asn_DEF_Flag_15P0_tags_1)
+		/sizeof(asn_DEF_Flag_15P0_tags_1[0]), /* 1 */
+	asn_DEF_Flag_15P0_tags_1,	/* Same as above */
+	sizeof(asn_DEF_Flag_15P0_tags_1)
+		/sizeof(asn_DEF_Flag_15P0_tags_1[0]), /* 1 */
+	{ 0, 0, SEQUENCE_constraint },
+	asn_MBR_Flag_15P0_1,
+	1,	/* Elements count */
+	&asn_SPC_Flag_15P0_specs_1	/* Additional specs */
+};
+
+static int asn_DFL_7_cmp_5(const void *sptr) {
+	const long *st = sptr;
+	
+	if(!st) {
+		return -1; /* No value is not a default value */
+	}
+	
+	/* Test default value 5 */
+	return (*st != 5);
+}
+static int asn_DFL_7_set_5(void **sptr) {
+	long *st = *sptr;
+	
+	if(!st) {
+		st = (*sptr = CALLOC(1, sizeof(*st)));
+		if(!st) return -1;
+	}
+	
+	/* Install default value 5 */
+	*st = 5;
+	return 0;
+}
+static const asn_INTEGER_enum_map_t asn_MAP_field_value2enum_7[] = {
+	{ 3,	3,	"red" },
+	{ 4,	5,	"green" },
+	{ 5,	4,	"blue" }
+};
+static const unsigned int asn_MAP_field_enum2value_7[] = {
+	2,	/* blue(5) */
+	1,	/* green(4) */
+	0	/* red(3) */
+};
+static const asn_INTEGER_specifics_t asn_SPC_field_specs_7 = {
+	asn_MAP_field_value2enum_7,	/* "tag" => N; sorted by tag */
+	asn_MAP_field_enum2value_7,	/* N => "tag"; sorted by N */
+	3,	/* Number of elements in the maps */
+	0,	/* Enumeration is not extensible */
+	1,	/* Strict enumeration */
+	0,	/* Native long size */
+	0
+};
+static const ber_tlv_tag_t asn_DEF_field_tags_7[] = {
+	(ASN_TAG_CLASS_UNIVERSAL | (10 << 2))
+};
+static /* Use -fall-defs-global to expose */
+asn_TYPE_descriptor_t asn_DEF_field_7 = {
+	"field",
+	"field",
+	&asn_OP_NativeEnumerated,
+	asn_DEF_field_tags_7,
+	sizeof(asn_DEF_field_tags_7)
+		/sizeof(asn_DEF_field_tags_7[0]), /* 1 */
+	asn_DEF_field_tags_7,	/* Same as above */
+	sizeof(asn_DEF_field_tags_7)
+		/sizeof(asn_DEF_field_tags_7[0]), /* 1 */
+	{ 0, 0, NativeEnumerated_constraint },
+	0, 0,	/* Defined elsewhere */
+	&asn_SPC_field_specs_7	/* Additional specs */
+};
+
+asn_TYPE_member_t asn_MBR_Flag_15P1_6[] = {
+	{ ATF_POINTER, 1, offsetof(struct Flag_15P1, field),
+		.tag = (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)),
+		.tag_mode = 0,
+		.type = &asn_DEF_field_7,
+		.type_selector = 0,
+		{ .oer_constraints = 0, .per_constraints = 0, .general_constraints = 0 },
+		.default_value_cmp = &asn_DFL_7_cmp_5,	/* Compare DEFAULT 5 */
+		.default_value_set = &asn_DFL_7_set_5,	/* Set DEFAULT 5 */
+		.name = "field"
+		},
+};
+static const ber_tlv_tag_t asn_DEF_Flag_15P1_tags_6[] = {
+	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
+};
+static const asn_TYPE_tag2member_t asn_MAP_Flag_15P1_tag2el_6[] = {
+    { (ASN_TAG_CLASS_UNIVERSAL | (10 << 2)), 0, 0, 0 } /* field */
+};
+asn_SEQUENCE_specifics_t asn_SPC_Flag_15P1_specs_6 = {
+	sizeof(struct Flag_15P1),
+	offsetof(struct Flag_15P1, _asn_ctx),
+	.tag2el = asn_MAP_Flag_15P1_tag2el_6,
+	.tag2el_count = 1,	/* Count of tags in the map */
+	0, 0, 0,	/* Optional elements (not needed) */
+	-1,	/* First extension addition */
+};
+asn_TYPE_descriptor_t asn_DEF_Flag_15P1 = {
+	"Flag",
+	"Flag",
+	&asn_OP_SEQUENCE,
+	asn_DEF_Flag_15P1_tags_6,
+	sizeof(asn_DEF_Flag_15P1_tags_6)
+		/sizeof(asn_DEF_Flag_15P1_tags_6[0]), /* 1 */
+	asn_DEF_Flag_15P1_tags_6,	/* Same as above */
+	sizeof(asn_DEF_Flag_15P1_tags_6)
+		/sizeof(asn_DEF_Flag_15P1_tags_6[0]), /* 1 */
+	{ 0, 0, SEQUENCE_constraint },
+	asn_MBR_Flag_15P1_6,
+	1,	/* Elements count */
+	&asn_SPC_Flag_15P1_specs_6	/* Additional specs */
+};
+
+
+/*** <<< INCLUDES [IntegerColorFlag] >>> ***/
+
+#include "Flag.h"
+
+/*** <<< TYPE-DECLS [IntegerColorFlag] >>> ***/
+
+typedef Flag_15P0_t	 IntegerColorFlag_t;
+
+/*** <<< FUNC-DECLS [IntegerColorFlag] >>> ***/
+
+extern asn_TYPE_descriptor_t asn_DEF_IntegerColorFlag;
+asn_struct_free_f IntegerColorFlag_free;
+asn_struct_print_f IntegerColorFlag_print;
+asn_constr_check_f IntegerColorFlag_constraint;
+ber_type_decoder_f IntegerColorFlag_decode_ber;
+der_type_encoder_f IntegerColorFlag_encode_der;
+xer_type_decoder_f IntegerColorFlag_decode_xer;
+xer_type_encoder_f IntegerColorFlag_encode_xer;
+
+/*** <<< CODE [IntegerColorFlag] >>> ***/
+
+/*
+ * This type is implemented using Flag_15P0,
+ * so here we adjust the DEF accordingly.
+ */
+
+/*** <<< STAT-DEFS [IntegerColorFlag] >>> ***/
+
+static const ber_tlv_tag_t asn_DEF_IntegerColorFlag_tags_1[] = {
+	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
+};
+asn_TYPE_descriptor_t asn_DEF_IntegerColorFlag = {
+	"IntegerColorFlag",
+	"IntegerColorFlag",
+	&asn_OP_SEQUENCE,
+	asn_DEF_IntegerColorFlag_tags_1,
+	sizeof(asn_DEF_IntegerColorFlag_tags_1)
+		/sizeof(asn_DEF_IntegerColorFlag_tags_1[0]), /* 1 */
+	asn_DEF_IntegerColorFlag_tags_1,	/* Same as above */
+	sizeof(asn_DEF_IntegerColorFlag_tags_1)
+		/sizeof(asn_DEF_IntegerColorFlag_tags_1[0]), /* 1 */
+	{ 0, 0, SEQUENCE_constraint },
+	asn_MBR_Flag_15P0_1,
+	1,	/* Elements count */
+	&asn_SPC_Flag_15P0_specs_1	/* Additional specs */
+};
+
+
+/*** <<< INCLUDES [EnumeratedColorFlag] >>> ***/
+
+#include "Flag.h"
+
+/*** <<< TYPE-DECLS [EnumeratedColorFlag] >>> ***/
+
+typedef Flag_15P1_t	 EnumeratedColorFlag_t;
+
+/*** <<< FUNC-DECLS [EnumeratedColorFlag] >>> ***/
+
+extern asn_TYPE_descriptor_t asn_DEF_EnumeratedColorFlag;
+asn_struct_free_f EnumeratedColorFlag_free;
+asn_struct_print_f EnumeratedColorFlag_print;
+asn_constr_check_f EnumeratedColorFlag_constraint;
+ber_type_decoder_f EnumeratedColorFlag_decode_ber;
+der_type_encoder_f EnumeratedColorFlag_encode_der;
+xer_type_decoder_f EnumeratedColorFlag_decode_xer;
+xer_type_encoder_f EnumeratedColorFlag_encode_xer;
+
+/*** <<< CODE [EnumeratedColorFlag] >>> ***/
+
+/*
+ * This type is implemented using Flag_15P1,
+ * so here we adjust the DEF accordingly.
+ */
+
+/*** <<< STAT-DEFS [EnumeratedColorFlag] >>> ***/
+
+static const ber_tlv_tag_t asn_DEF_EnumeratedColorFlag_tags_1[] = {
+	(ASN_TAG_CLASS_UNIVERSAL | (16 << 2))
+};
+asn_TYPE_descriptor_t asn_DEF_EnumeratedColorFlag = {
+	"EnumeratedColorFlag",
+	"EnumeratedColorFlag",
+	&asn_OP_SEQUENCE,
+	asn_DEF_EnumeratedColorFlag_tags_1,
+	sizeof(asn_DEF_EnumeratedColorFlag_tags_1)
+		/sizeof(asn_DEF_EnumeratedColorFlag_tags_1[0]), /* 1 */
+	asn_DEF_EnumeratedColorFlag_tags_1,	/* Same as above */
+	sizeof(asn_DEF_EnumeratedColorFlag_tags_1)
+		/sizeof(asn_DEF_EnumeratedColorFlag_tags_1[0]), /* 1 */
+	{ 0, 0, SEQUENCE_constraint },
+	asn_MBR_Flag_15P1_6,
+	1,	/* Elements count */
+	&asn_SPC_Flag_15P1_specs_6	/* Additional specs */
+};
+

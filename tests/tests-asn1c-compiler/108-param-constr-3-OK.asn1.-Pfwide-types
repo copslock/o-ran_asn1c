@@ -1,0 +1,156 @@
+
+/*** <<< INCLUDES [MinMax] >>> ***/
+
+#include <INTEGER.h>
+
+/*** <<< TYPE-DECLS [MinMax] >>> ***/
+
+typedef INTEGER_t	 MinMax_16P0_t;
+
+/*** <<< FUNC-DECLS [MinMax] >>> ***/
+
+extern asn_TYPE_descriptor_t asn_DEF_MinMax_16P0;
+asn_struct_free_f MinMax_16P0_free;
+asn_struct_print_f MinMax_16P0_print;
+asn_constr_check_f MinMax_16P0_constraint;
+ber_type_decoder_f MinMax_16P0_decode_ber;
+der_type_encoder_f MinMax_16P0_encode_der;
+xer_type_decoder_f MinMax_16P0_decode_xer;
+xer_type_encoder_f MinMax_16P0_encode_xer;
+
+/*** <<< CODE [MinMax] >>> ***/
+
+int
+MinMax_16P0_constraint(const asn_TYPE_descriptor_t *td, const void *sptr,
+			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
+	const INTEGER_t *st = (const INTEGER_t *)sptr;
+	long value;
+	
+	if(!sptr) {
+		ASN__CTFAIL(app_key, td, sptr,
+			"%s: value not given (%s:%d)",
+			td->name, __FILE__, __LINE__);
+		return -1;
+	}
+	
+	if(asn_INTEGER2long(st, &value)) {
+		ASN__CTFAIL(app_key, td, sptr,
+			"%s: value too large (%s:%d)",
+			td->name, __FILE__, __LINE__);
+		return -1;
+	}
+	
+	if((value >= 3)) {
+		/* Constraint check succeeded */
+		return 0;
+	} else {
+		ASN__CTFAIL(app_key, td, sptr,
+			"%s: constraint failed (%s:%d)",
+			td->name, __FILE__, __LINE__);
+		return -1;
+	}
+}
+
+/*
+ * This type is implemented using INTEGER,
+ * so here we adjust the DEF accordingly.
+ */
+
+/*** <<< STAT-DEFS [MinMax] >>> ***/
+
+static const ber_tlv_tag_t asn_DEF_MinMax_16P0_tags_1[] = {
+	(ASN_TAG_CLASS_UNIVERSAL | (2 << 2))
+};
+asn_TYPE_descriptor_t asn_DEF_MinMax_16P0 = {
+	"MinMax",
+	"MinMax",
+	&asn_OP_INTEGER,
+	asn_DEF_MinMax_16P0_tags_1,
+	sizeof(asn_DEF_MinMax_16P0_tags_1)
+		/sizeof(asn_DEF_MinMax_16P0_tags_1[0]), /* 1 */
+	asn_DEF_MinMax_16P0_tags_1,	/* Same as above */
+	sizeof(asn_DEF_MinMax_16P0_tags_1)
+		/sizeof(asn_DEF_MinMax_16P0_tags_1[0]), /* 1 */
+	{ 0, 0, MinMax_16P0_constraint },
+	0, 0,	/* No members */
+	0	/* No specifics */
+};
+
+
+/*** <<< INCLUDES [ThreePlus] >>> ***/
+
+#include "MinMax.h"
+
+/*** <<< TYPE-DECLS [ThreePlus] >>> ***/
+
+typedef MinMax_16P0_t	 ThreePlus_t;
+
+/*** <<< FUNC-DECLS [ThreePlus] >>> ***/
+
+extern asn_TYPE_descriptor_t asn_DEF_ThreePlus;
+asn_struct_free_f ThreePlus_free;
+asn_struct_print_f ThreePlus_print;
+asn_constr_check_f ThreePlus_constraint;
+ber_type_decoder_f ThreePlus_decode_ber;
+der_type_encoder_f ThreePlus_encode_der;
+xer_type_decoder_f ThreePlus_decode_xer;
+xer_type_encoder_f ThreePlus_encode_xer;
+
+/*** <<< CODE [ThreePlus] >>> ***/
+
+int
+ThreePlus_constraint(const asn_TYPE_descriptor_t *td, const void *sptr,
+			asn_app_constraint_failed_f *ctfailcb, void *app_key) {
+	const MinMax_16P0_t *st = (const MinMax_16P0_t *)sptr;
+	long value;
+	
+	if(!sptr) {
+		ASN__CTFAIL(app_key, td, sptr,
+			"%s: value not given (%s:%d)",
+			td->name, __FILE__, __LINE__);
+		return -1;
+	}
+	
+	if(asn_INTEGER2long(st, &value)) {
+		ASN__CTFAIL(app_key, td, sptr,
+			"%s: value too large (%s:%d)",
+			td->name, __FILE__, __LINE__);
+		return -1;
+	}
+	
+	if((value >= 3)) {
+		/* Constraint check succeeded */
+		return 0;
+	} else {
+		ASN__CTFAIL(app_key, td, sptr,
+			"%s: constraint failed (%s:%d)",
+			td->name, __FILE__, __LINE__);
+		return -1;
+	}
+}
+
+/*
+ * This type is implemented using MinMax_16P0,
+ * so here we adjust the DEF accordingly.
+ */
+
+/*** <<< STAT-DEFS [ThreePlus] >>> ***/
+
+static const ber_tlv_tag_t asn_DEF_ThreePlus_tags_1[] = {
+	(ASN_TAG_CLASS_UNIVERSAL | (2 << 2))
+};
+asn_TYPE_descriptor_t asn_DEF_ThreePlus = {
+	"ThreePlus",
+	"ThreePlus",
+	&asn_OP_INTEGER,
+	asn_DEF_ThreePlus_tags_1,
+	sizeof(asn_DEF_ThreePlus_tags_1)
+		/sizeof(asn_DEF_ThreePlus_tags_1[0]), /* 1 */
+	asn_DEF_ThreePlus_tags_1,	/* Same as above */
+	sizeof(asn_DEF_ThreePlus_tags_1)
+		/sizeof(asn_DEF_ThreePlus_tags_1[0]), /* 1 */
+	{ 0, 0, ThreePlus_constraint },
+	0, 0,	/* No members */
+	0	/* No specifics */
+};
+
